@@ -8,7 +8,7 @@
 # testing
 /coverage
 
-# production
+# Ignore the public and src folders
 /public
 /src
 
