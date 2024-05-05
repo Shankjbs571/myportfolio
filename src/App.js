@@ -4,7 +4,7 @@ import React from 'react';
 import Theme from './Theme.js';
 import Skills from './components/Skills.js';
 import Sidebar from './components/Sidebar.js';
-import About from './components/About.js';
+import About from './components/Info.js';
 
 export default function App() {
   document.body.classList.add("bg-white", "dark:bg-black");

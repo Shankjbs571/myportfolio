@@ -9,8 +9,7 @@
 /coverage
 
 # Ignore the public and src folders
-/public
-/src
+
 
 # misc
 .DS_Store
