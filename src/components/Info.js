@@ -40,8 +40,26 @@ export default function About(){
           </div>
           <div className="flex flex-col items-center lg:items-start mx-12 lg:mx-0 mt-10 lg:w-5/6">
             <p className="lg:mb-5 text-center lg:text-left text-md lg:text-xl font-mono font-medium text-black dark:text-white">
-                I am currently pursuing Computer Science and Engineering at the University of Lucknow and Data Science and Applications from IIT Madras. My skills include building applications using Python, Django, Flask, SQL, and NoSQL databases. I have a keen interest in working on ML projects and other data science-related tasks. Moreover, I have experience as a Django intern at CRIS Indian Railways. I also like to build and learn core Computer Science projects using the C language, such as Linux applications or system call implementations, to understand how low-level concepts really work. In addition, I am passionate about understanding ML research papers and implementing them, including projects related to NLP.
-              </p>
+                {/* I am currently pursuing Computer Science and Engineering at the University of Lucknow and Data Science and Applications from IIT Madras. My skills include building applications using Python, Django, Flask, SQL, and NoSQL databases. I have a keen interest in working on ML projects and other data science-related tasks. Moreover, I have experience as a Django intern at CRIS Indian Railways. I also like to build and learn core Computer Science projects using the C language, such as Linux applications or system call implementations, to understand how low-level concepts really work. In addition, I am passionate about understanding ML research papers and implementing them, including projects related to NLP.
+              </p> */}
+              Hey! I'm @shankjbs175 (Shashank Kumar) 👋
+              <br/>
+I'm a Computer Science Student. <br/>
+
+I have been building APIs and tools 🚀 <bbr/>
+
+I like to build things with Machine Learning, Django/flask, SQL and NoSQL databases, Docker, Python, TypeScript (and JavaScript), modern backend APIs, and modern frontend frameworks. 🤖
+
+I'm currently dedicating a high percentage of my time to ML and my other projects. At the same time, I'm also looking for Internship or full-time opportunities . If you would like to have my help with your Projects, feel free to contact me. 🤓
+
+You can find me on:
+
+My website: Shashank.com
+Twitter as @Shankjbs175
+GitHub as @Shankjbs571 (you are here)
+LinkedIn
+Dev
+</p>
               {/* <i>Data & Analytics Summer Intern</i>, and I am the 
                 <i>Founder</i> of 
                 <a className="hover:font-semibold" href="https://prospectiveprogramming.org"><u>ProspectiveProgramming</u></a> and 
