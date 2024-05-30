@@ -23,7 +23,7 @@ export default function Projects() {
             setRepo(data);
             console.log("done");
             console.log("this is repo set");
-            console.log(repo[0].name);
+            console.log(data);
         })
         .catch((error) => console.log(error));
     }, []);
@@ -35,7 +35,7 @@ export default function Projects() {
               <div className="lg:mt-0 inline-grid text-center lg:text-left w-full gap-3 lg:gap-1">
                 <p className="mt-10 md:mt-0 text-6xl font-mono font-bold text-black dark:text-white">Projects</p>
                 <div className="inline-grid pt-10 lg:flex lg:items-center gap-3">
-                  <div className="flex flex-row flex-wrap  gap-3 justify-evenly sm:justify-start w-full ">
+                  <div className="flex flex-row flex-wrap  gap-3 justify-evenly sm:justify-start  ">
                     
                     {repo.map( (rep) => <Repocard key = {rep.id} Repo = {rep} /> )}
 
