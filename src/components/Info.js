@@ -28,6 +28,7 @@ export default function About(){
                     <img src="https://skillicons.dev/icons?i=gmail" height="30" width="30" alt="gmail" />
                   </a>
                   <Theme />
+                                    
                 </div>
 
 
