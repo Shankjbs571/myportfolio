@@ -37,7 +37,12 @@ export default function Projects() {
                 <div className="inline-grid pt-10 lg:flex lg:items-center gap-3">
                   <div className="flex flex-row flex-wrap  gap-3 justify-evenly sm:justify-start  ">
                     
-                    {repo.map( (rep) => <Repocard key = {rep.id} Repo = {rep} /> )}
+                  {repo.map((rep) => {
+                    if (rep.description && rep.description.trim() && rep.fork == false) {
+                      return <Repocard key={rep.id} Repo={rep} />;
+                    }
+                    return null;
+                  })}
 
                       
                     
