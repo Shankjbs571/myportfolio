@@ -4,9 +4,9 @@ export default function Repocard( {Repo} ){
 
  
     return (
-    <div className=" flex flex-col justify-between max-w-sm p-6 pb-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-teal-100 transition duration-700 hover:scale-110 hover:rotate-1 dark:bg-gray-800 dark:border-gray-700">
+    <div className=" flex flex-col justify-between max-w-sm p-6 pb-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-teal-100 dark:hover:bg-teal-50 transition duration-700 hover:scale-110 hover:rotate-1 dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{Repo.name}</h5>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight dark:hover:text-gray-800 text-gray-900 dark:text-gray-400">{Repo.name}</h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{Repo.description}</p>
         <div className="flex flex-row d-inline-flex gap-2 flex-wrap flex-items-center f6 my-1">
@@ -14,18 +14,20 @@ export default function Repocard( {Repo} ){
             
         </div>
         <footer className=" flex flex-row justify-between relative bottom-0" >
-            <a href={Repo.html_url} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <a href={Repo.html_url} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-full focus:ring-4 focus:outline-none hover:bg-blue-200">
                 
                 <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" className=" octicon octicon-mark-github v-align-middle color-fg-default">
                     <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
                 </svg>
             </a>
-            <div className="flex pt-5 justify-items-center">
+            { Repo.stargazers_count > 0 && 
+            (<div className="flex pt-5 justify-items-center">
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="mt-1 octicon octicon-star-fill starred-button-icon d-inline-block mr-2">
                 <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path>
             </svg>
+            {/* <p>{Repo.stargazers_count}</p> */}
             <p>{Repo.stargazers_count}</p>
-            </div>
+            </div>)}
             
         </footer>
     </div>
