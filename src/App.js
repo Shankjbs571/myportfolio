@@ -1,33 +1,36 @@
 import Image from './components/Image.js';
 import React from 'react';
-// import resume from './Neil-Purohit.pdf';
-import Theme from './Theme.js';
-import Skills from './components/Skills.js';
-import Sidebar from './components/Sidebar.js';
-import About from './components/Info.js';
-import Projects from './components/Projects.js';
-import Terminal from './components/Terminal.js';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './Pages/Home.js';
+import Update from './Pages/Update.js';
+
 export default function App() {
   document.body.classList.add("bg-white", "dark:bg-black");
-  const resume = () => { alert("I will Upload soon"); };
+  const resume = () => { alert("I will Upload soon") };
 
   return (
+    <Router>
+    <div>
+      {/* <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav> */}
 
-    <div className='grid sm:grid-cols-4 gap-4'>
-      <Sidebar />
-      <div className="h-screen grid-flow-row  items-center mt-32 flex-col col-span-3 ">
-        <About/>
-        <Skills/>
-        <Projects/>
-        
-
-        
-
-      </div>
-
-      
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/update" element={<Update />} />
+      </Routes>
     </div>
+  </Router>
 
   );
 
