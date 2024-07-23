@@ -11,12 +11,13 @@ export default function Image() {
 
 
     return (
-        <div className="max-lg:flex sm:flex sm:flex-row max-lg:justify-around sm:items-center sm:justify-between mr-20">
+        <div className="max-lg:flex flex flex-col justify-normal sm:flex-row max-lg:justify-around items-center sm:justify-between sm:mr-20">
             
             <div>{image}</div>
-            <div className="chart-container mr-40 h-[100px] w-[400px]">
-                <h1 className='font-bold'>GitHub this Week</h1>
+            <div className="chart-container flex flex-col items-center h-[100px] w-[400px] mt-10 sm:mr-40 sm:h-[100px] sm:w-[400px]">
                 <WeeklyContributionsLineChart />
+                <h1 className='font-bold dark:text-gray-50 '>GitHub this Week</h1>
+
             </div>
             
                
