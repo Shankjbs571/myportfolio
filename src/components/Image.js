@@ -1,7 +1,6 @@
 import photo from '../assets/shashank.jpg';
 import React from 'react';
-import { PieChart } from '@mui/x-charts/PieChart';
-
+import WeeklyContributionsLineChart from './utils/WeeklyContributionsLineChart';
 
 
 export default function Image() {
@@ -12,9 +11,13 @@ export default function Image() {
 
 
     return (
-        <div className=" max-lg:flex  max-lg:justify-center">
+        <div className="max-lg:flex sm:flex sm:flex-row max-lg:justify-around sm:items-center sm:justify-between mr-20">
             
             <div>{image}</div>
+            <div className="chart-container mr-40 h-[100px] w-[400px]">
+                <h1 className='font-bold'>GitHub this Week</h1>
+                <WeeklyContributionsLineChart />
+            </div>
             
                
 
