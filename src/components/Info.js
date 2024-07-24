@@ -54,14 +54,13 @@ I have been building APIs and tools 🚀 <bbr/>
 I like to build things with Machine Learning, Django/flask, SQL and NoSQL databases, Docker, Python, TypeScript (and JavaScript), modern backend APIs, and modern frontend frameworks. 🤖
 
 I'm currently dedicating a high percentage of my time to ML and my other projects. At the same time, I'm also looking for Internship or full-time opportunities . If you would like to have my help with your Projects, feel free to contact me. 🤓
-
+<br/>
 You can find me on:
-
-My website: Shashank.com
-Twitter as @Shankjbs175
-GitHub as @Shankjbs571 (you are here)
-LinkedIn
-Dev
+<br/>
+Twitter as @Shankjbs175 <br/>
+GitHub as @Shankjbs571<br/>
+LinkedIn<br/>
+Dev<br/>
 </p>
               {/* <i>Data & Analytics Summer Intern</i>, and I am the 
                 <i>Founder</i> of 
