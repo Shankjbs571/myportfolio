@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './Pages/Home.js';
 import Update from './Pages/Update.js';
+import Terminal from './components/Terminal.js';
 
 export default function App() {
   document.body.classList.add("bg-white", "dark:bg-black");
@@ -28,6 +29,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/update" element={<Update />} />
+        <Route path="/terminal" element={<Terminal />} />
       </Routes>
     </div>
   </Router>
