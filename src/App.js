@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './Pages/Home.js';
 import Update from './Pages/Update.js';
 import Terminal from './components/Terminal.js';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   document.body.classList.add("bg-white", "dark:bg-black");
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/update" element={<Update />} />
         <Route path="/terminal" element={<Terminal />} />
       </Routes>
+      <Analytics />
     </div>
   </Router>
 

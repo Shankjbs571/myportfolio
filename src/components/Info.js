@@ -28,6 +28,11 @@ export default function About(){
                   <a href="https://github.com/Shankjbs571" target="_blank" rel="noopener noreferrer">
                     <img src="https://skillicons.dev/icons?i=gmail" height="30" width="30" alt="gmail" />
                   </a>
+                  <a href="https://drive.google.com/file/d/1eHiFy7Myh4UyBwOo2Z5vCXkPGG6ftF2q/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded-full">
+                      Resume/CV
+                    </button>
+                  </a>
                   <Theme />
                                     
                 </div>
