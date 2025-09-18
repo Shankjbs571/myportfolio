@@ -5,6 +5,7 @@ import Home from './Pages/Home.js';
 import Update from './Pages/Update.js';
 import Terminal from './components/Terminal.js';
 import { Analytics } from '@vercel/analytics/react';
+import Sparkshelf from './components/Sparkshelf.js';
 
 export default function App() {
   document.body.classList.add("bg-white", "dark:bg-black");
@@ -30,7 +31,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/update" element={<Update />} />
-        <Route path="/terminal" element={<Terminal />} />
+        <Route path="/terminal" element={<Terminal />} /> 
+        <Route path="/sparkshelf" element={<Sparkshelf />} /> 
       </Routes>
       <Analytics />
     </div>
